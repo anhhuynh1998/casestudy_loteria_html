@@ -41,7 +41,8 @@
             <img src="https://dscnnwjxnwl3f.cloudfront.net/media/banner/r/r/rrud-01.jpg" alt="">
         </a>
     </div>
-    <div class="section-happy-lunch"><img src="https://dscnnwjxnwl3f.cloudfront.net/media/flashsale/g/h/ghtt_1.jpg" alt="">
+    <div class="section-happy-lunch"><img src="https://dscnnwjxnwl3f.cloudfront.net/media/flashsale/g/h/ghtt_1.jpg"
+            alt="">
     </div>
     <h2>ƯU ĐÃI ĐẶC BIỆT</h2>
     <div class="row ">
@@ -113,6 +114,55 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="gh" onclick="showtable()">
+        <a href="#cart-link">
+            <img class="pt-gh"
+                src="https://img.pikbest.com/png-images/20191028/little-boy-pushing-a-shopping-cart-to-buy-things-gif_2515305.png!bw700"
+                alt="">
+        </a>
+    </div>
+    <div>
+        <form action="" id="form-buy" method="post" onsubmit="return false">
+            <table id="table">
+                <tbody>
+                    <tr>
+                        <td class="td1">Tên người mua :</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">số điện thoại :</td>
+                        <td><input type="tel"></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Địa chỉ :</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Sản phẩm :</td>
+                        <td><input type="text" id="dec" readonly></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Số lượng :</td>
+                        <td><input type="number" name="" id="soluong" readonly></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Đơn giá :</td>
+                        <td><input type="number" name="" id="dongia" readonly></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Thành tiền :</td>
+                        <td><input type="number" name="" id="thanhtien" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" id="btn-buy">Mua hàng</button>
+                            <button type="button" onclick="cancel()">Huỷ Đơn Hàng</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
     </div>
     <script src="food.js"></script>
 </body>
