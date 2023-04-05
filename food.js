@@ -1,5 +1,5 @@
 
-class food{
+class Food{
     constructor(photo,name,combo,price){
         this.photo = photo;
         this.name = name ;
@@ -8,12 +8,12 @@ class food{
     }
 }
 let foods = [
-    new food("https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/p/r/pr_combo_33k.png","Combo đặt biệt",["gà rán 1 miếng","1 mỳ ý"],79000),
-    new food("https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/p/r/pr-03_1.png","Combo Tứ vị",["gà sốt HS 1 miếng","Gà sốt đậu 1 miếng"],129000),
-    new food("https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/p/r/pr-04_1.png","Combo LChicken",["gà rán 1 miếng","1 Burger LChicken "],99000),
-    new food("https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/p/r/pr-02.png","Combo Mala",["gà sốt mala 1 miếng","1 Burger Bulgogi "],99000),
-    new food("https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/g/a/ga_tuyet_vang_68k.png","Combo 40,000đ",["1 gà tuyết vàng","1 pepsi "],40000),
-    new food("https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/s/n/snow_chicken.jpg","Combo 68,000đ",["1 gà tuyết vàng","1 khoai tây lắc "],99000),
+    new Food("https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/p/r/pr_combo_33k.png","Combo đặt biệt",["gà rán 1 miếng","1 mỳ ý"],79000),
+    new Food("https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/p/r/pr-03_1.png","Combo Tứ vị",["gà sốt HS 1 miếng","Gà sốt đậu 1 miếng"],129000),
+    new Food("https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/p/r/pr-04_1.png","Combo LChicken",["gà rán 1 miếng","1 Burger LChicken "],99000),
+    new Food("https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/p/r/pr-02.png","Combo Mala",["gà sốt mala 1 miếng","1 Burger Bulgogi "],99000),
+    new Food("https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/g/a/ga_tuyet_vang_68k.png","Combo 40,000đ",["1 gà tuyết vàng","1 pepsi "],40000),
+    new Food("https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/2e1628f5f7131a9eb328ec1fb2c22fd3/s/n/snow_chicken.jpg","Combo 68,000đ",["1 gà tuyết vàng","1 khoai tây lắc "],99000),
 ]
 function renderFood(){
     let row = document.querySelector('.row');
@@ -56,3 +56,10 @@ function formatCurrency(number){
     return number.toLocaleString('vi-VN', {style : 'currency', currency : 'VND'});
 }
 renderFood();
+function showtable(){
+        document.getElementsByClassName("table")[0].style.display = "block";
+    
+}
+function cacel(){
+
+}

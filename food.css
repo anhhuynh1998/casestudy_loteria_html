@@ -86,7 +86,7 @@ a{
     margin-left: 20px;
 }
 .accout-menu{
-    margin-left: 400px;
+    margin-left: 350px;
 }
 .container-fom{
     display: flex;
@@ -144,4 +144,17 @@ a{
      z-index: 1;
      position: fixed;
      top: 0;
+}
+.tyPe{
+    margin-left: 10%;
+    display: flex;
+}
+.table{
+    border: 1px solid black;
+    background-color: antiquewhite;
+    position: fixed;
+    top: 100px;
+    left: 500px;
+    display: none;
+    width: 50%;
 }
